@@ -28,17 +28,17 @@ smd({
 }, async (_0x213b75, _0x13be17) => {
   try {
     if (!_0x13be17) {
-      return await _0x213b75.reply("*_Give Me a Search Query_*");
+      return await _0x213b75.reply("*_What song do you want, dumbass_*");
     }
     let _0x14c1a1 = await yts(_0x13be17);
     let _0x4f86cb = _0x14c1a1.all[0];
     if (!_0x4f86cb) {
-      return await _0x213b75.reply("*_No results found for your search_*");
+      return await _0x213b75.reply("*_Your music taste sucks, this bot don't download such rubbish_*");
     }
     let _0x4342ba = await smdBuffer(_0x4f86cb.thumbnail);
     await _0x213b75.bot.sendMessage(_0x213b75.jid, {
       'image': _0x4342ba,
-      'caption': "\n*Queen_NIKKA • ᴍᴜꜱɪᴄ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n*🍀Title :* " + _0x4f86cb.title + "\n*🍀Url :* " + _0x4f86cb.url + "\n*🍀Description :* " + _0x4f86cb.timestamp + "\n*🍀Views :* " + _0x4f86cb.views + "\n*🍀Uploaded :* " + _0x4f86cb.ago + "\n*🍀Author :* " + _0x4f86cb.author.name + "\n\n== |🍀| powered by Haki |🍀| ==\n"
+      'caption': "\n*Chucky 2.0• ᴍᴜꜱɪᴄ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n*🧸Title :* " + _0x4f86cb.title + "\n*🧸Url :* " + _0x4f86cb.url + "\n*🧸Description :* " + _0x4f86cb.timestamp + "\n*🧸Views :* " + _0x4f86cb.views + "\n*🧸Uploaded :* " + _0x4f86cb.ago + "\n*🧸Author :* " + _0x4f86cb.author.name + "\n\n== |🧸| powered by Chucky 2.0|🧸| ==\n"
     });
     const _0x23d6e1 = "https://api-gifted-tech.onrender.com/api/download/ytmp3v2?url=" + _0x4f86cb.url + "&apikey=gifteddevskk";
     let _0x4acf6c = 3;
@@ -75,14 +75,14 @@ smd({
           return;
         } else {
           console.log("Error: Could not download audio, API response:", _0x509920);
-          await _0x213b75.reply("*_Error: Could not download the audio. Please try again later!_*");
+          await _0x213b75.reply("*_Error: Your music taste sucks, failed to download the rubbish you call music_*");
           return;
         }
       } catch (_0x2b8c59) {
         console.error("Retry Error:", _0x2b8c59);
         _0x4acf6c--;
         if (_0x4acf6c === 0) {
-          await _0x213b75.reply("*_Error: Could not download the audio after multiple attempts. Please try again later!_*");
+          await _0x213b75.reply("*_Error: Your music taste sucks, failed to download the rubbish you call music_*");
         }
       }
     }
@@ -138,14 +138,14 @@ smd({
           return;
         } else {
           console.log("Error: Could not download audio, API response:", _0x11496f);
-          await _0x38a599.reply("*_Error: Could not download the audio. Please try again later!_*");
+          await _0x38a599.reply("*_Error: Your music taste sucks, failed to download the rubbish you call music_*");
           return;
         }
       } catch (_0x3c5074) {
         console.error("Retry Error:", _0x3c5074);
         _0x5f0163--;
         if (_0x5f0163 === 0) {
-          await _0x38a599.reply("*_Error: Could not download the audio after multiple attempts. Please try again later!_*");
+          await _0x38a599.reply("*_Error: Your music taste sucks, failed to download the rubbish you call music_*");
         }
       }
     }
