@@ -29,7 +29,7 @@ smd(
 *Uptime:* ${uptime}
 
 
-== |🍀|Powered By Haki|🍀| ==
+== |🧸|Powered By chuckyXcylee|🧸| ==
     `;
 
     // Send the final message directly
