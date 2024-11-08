@@ -360,10 +360,10 @@ smd({
   filename: __filename
 }, async (_0x230c03, _0x3b568a) => {
   try {
-    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*💬QUEEN_ALYA_FANCY_TEXT💬* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy QUEEN_ALYA(For all text)\n\t\t" + prefix + "fancy 25 QUEEN_ALYA(For specific text)```\n\n");
+    let _0x365550 = "┏━━━━━━━━━━━━━━━━━━━━━━━━\n┃\t*💬Chucky 2.0_FANCY_TEXT💬* \n┗━━━━━━━━━━━━━━━━━━━━━━━━\n\n " + (_0x3b568a ? "```🔢Reply the number you wants to select``` \n\n" : "```\t\t" + prefix + "fancy QUEEN_ALYA(For all text)\n\t\t" + prefix + "fancy 25 QUEEN_ALYA(For specific text)```\n\n");
     let _0x50c7d9 = parseInt(_0x3b568a);
     if (isNaN(_0x50c7d9)) {
-      let _0x4ca942 = _0x3b568a ? _0x3b568a : "QUEEN_ALYA";
+      let _0x4ca942 = _0x3b568a ? _0x3b568a : "Chucky 2.0";
       listall(_0x4ca942).forEach((_0x51f58f, _0x2be109) => {
         _0x365550 += "\n" + (_0x2be109 += 1) + " " + _0x51f58f + "\n";
       });
@@ -391,11 +391,11 @@ smd({
 }, async (_0x85089c, _0x29ac4f) => {
   try {
     if (!_0x29ac4f || !_0x29ac4f.toLowerCase().includes("https")) {
-      return _0x85089c.reply("Provide me a link");
+      return _0x85089c.reply("Provide me a link,stop bein an idiot");
     }
     let _0xe54a62 = _0x29ac4f.split(" ")[0];
     let _0x24899a = await axios.get("https://tinyurl.com/api-create.php?url=" + _0xe54a62);
-    _0x85089c.reply("*🛡️Your Shortened URL*\n\n" + _0x24899a.data);
+    _0x85089c.reply("*🛡️Your Shortened URL, mf*\n\n" + _0x24899a.data);
   } catch (_0x39ae7e) {
     _0x85089c.error(_0x39ae7e + "\n\ncmdName: tiny", _0x39ae7e, false);
   }
